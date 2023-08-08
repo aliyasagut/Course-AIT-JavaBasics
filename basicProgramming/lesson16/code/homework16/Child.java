@@ -8,16 +8,33 @@ public class Child {
     int height;
     int weight;
 
-    void play(){
+    public Child(String name, String gender, int age) {
+        this.name = name;
+        this.gender = gender;
+        this.age = age;
+    }
+
+    public Child(String name, int height, int weight, int age) {
+        this.name = name;
+        this.height = height;
+        this.weight = weight;
+        this.age = age;
+
+    }
+
+    void play() {
         System.out.println("I am playing");
     }
-    void sleep(){
+
+    void sleep() {
         System.out.println("I am sleeping...");
     }
-    void eat(){
+
+    void eat() {
         System.out.println("I am eating");
     }
-    void scream(){
+
+    void scream() {
         System.out.println("Oooo-aaaaa-uuu-eeeeee");
     }
 }

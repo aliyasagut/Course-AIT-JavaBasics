@@ -7,6 +7,16 @@ public class Student {
     int averageNote;
     String commentOfTeacher;
 
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    public Student(String name, String university, int averageNote){
+        this.name = name;
+        this.educationalInstitution = university;
+        this.averageNote = averageNote;
+    }
+
     void attendLessons(){
         System.out.println("I am on a lesson");
     }
