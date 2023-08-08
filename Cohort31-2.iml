@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/basicProgramming/homework02" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/basicProgramming/lesson02" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/basicProgramming/lesson03/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/basicProgramming/lesson03/math" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/basicProgramming/homework03" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/basicProgramming/homework04" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/basicProgramming/homework05" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/basicProgramming/lesson04/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/basicProgramming/lesson04/homework04" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/basicProgramming/lesson05/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/basicProgramming/lesson06/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/basicProgramming/lesson07/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/basicProgramming/lesson08/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/basicProgramming/lesson09/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/basicProgramming/lesson10/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/basicProgramming/lesson11/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/basicProgramming/lesson12/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/basicProgramming/lesson13/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/basicProgramming/lesson14/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/basicProgramming/lesson16/code" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/basicProgramming" />
+      <excludeFolder url="file://$MODULE_DIR$/basicProgramming/lesson04" />
+      <excludeFolder url="file://$MODULE_DIR$/basicProgramming/lesson06" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
