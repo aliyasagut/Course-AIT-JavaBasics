@@ -12,10 +12,10 @@ public class Lesson16 {
 
         System.out.println("---------cat 2");
         Cat cat2 = new Cat(2, "Boris");
-        cat2.sayMeow();
-        cat2.running();
-        System.out.println("Cat name " + cat2.name);
-        System.out.println("Cat age " +cat2.age);
+        cat.sayMeow();
+        cat.running();
+        System.out.println("Cat name " + cat.name);
+        System.out.println("Cat age " +cat.age);
 
         System.out.println("-------cat 3------");
         Cat catBoris = new Cat(1, "Boris", "red");
