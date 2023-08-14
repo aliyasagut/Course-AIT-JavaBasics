@@ -1,19 +1,25 @@
-package homework19;
+package homework20;
 
-public class Dog2 {
+public class Dog3 {
     private String name;
     private int jumpHeight;
     private int maxJumpHeight;
     private int increaseByTraining = 10;
+    static final int MULTIPLIER = 2;
+    static int counterOfJumps = 0;
 
-    public Dog2(String name, int jumpHeight) {
+    public Dog3(String name, int jumpHeight) {
         this.name = name;
         this.jumpHeight = jumpHeight;
-        this.maxJumpHeight = jumpHeight * 2;
+        this.maxJumpHeight = jumpHeight * MULTIPLIER;
     }
 
-    public Dog2() {
+    public Dog3() {
 
+    }
+
+    static void getCounterOfJumps(){
+        System.out.println("Общее количество прыжков, сделанных всеми собаками: " + counterOfJumps);
     }
 
     public String getName() {
@@ -25,7 +31,7 @@ public class Dog2 {
     }
 
     public int getMaxJumpHeight() {
-        return jumpHeight * 2;
+        return maxJumpHeight;
     }
 
     public int getIncreaseByTraining() {
@@ -56,6 +62,7 @@ public class Dog2 {
         }
         if (jumpHeight >= barrierHeight) {
             jump(barrierHeight);
+            counterOfJumps++;
             System.out.println("End get barrier. Current jump: " + jumpHeight);
             return result = true;
         } else {

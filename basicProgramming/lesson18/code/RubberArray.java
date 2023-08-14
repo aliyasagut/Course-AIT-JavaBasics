@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class RubberArray {
 
-    int[] array;
+    private int[] array;
 
     public RubberArray() { //конструктор
         this.array = new int[0];
