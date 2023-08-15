@@ -11,6 +11,17 @@ public class ArraysUtil {
     }
 
     // Метод возвращает индекс мин значения от всего массиве
+    public static void printArray(int[] array) {
+        System.out.print("[");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i]);
+            if (i < array.length - 1) {
+                System.out.print("; ");
+            }
+        }
+        System.out.println("]");
+    }
+
     private static int minIndex(int[] arr) {
         int min = arr[0];
         int minIndex = 0;
