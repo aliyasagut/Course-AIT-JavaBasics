@@ -39,6 +39,6 @@ public class MainDog3 {
         System.out.println("I have jumped " + counter + " times!");
 
         System.out.println("_________________________");
-        Dog3.getCounterOfJumps();
+        System.out.println("Общее количество прыжков, сделанных всеми собаками: " + Dog3.getCounterOfJumps());
     }
 }

@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class RubberArray3 {
 
     private int[] array;
-    int cursor;
+    private int cursor;
 
     static final int MULTIPLIER = 2;
 
@@ -53,7 +53,7 @@ public class RubberArray3 {
 
     private void extractArray() { // расширение массива на 1 ячейку
         System.out.println("Расширяем внутренний массив!");
-        array = Arrays.copyOf(array, array.length * MULTIPLIER);
+        array = Arrays.copyOf(array, array.length * RubberArray3.MULTIPLIER);
     }
 
     public void printArray() { // вывести в консоль все значения массива

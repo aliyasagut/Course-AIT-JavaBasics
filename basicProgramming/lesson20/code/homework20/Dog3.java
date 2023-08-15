@@ -6,20 +6,20 @@ public class Dog3 {
     private int maxJumpHeight;
     private int increaseByTraining = 10;
     static final int MULTIPLIER = 2;
-    static int counterOfJumps = 0;
+    private static int counterOfJumps = 0;
 
     public Dog3(String name, int jumpHeight) {
         this.name = name;
         this.jumpHeight = jumpHeight;
-        this.maxJumpHeight = jumpHeight * MULTIPLIER;
+        this.maxJumpHeight = jumpHeight * Dog3.MULTIPLIER;
     }
 
     public Dog3() {
 
     }
 
-    static void getCounterOfJumps(){
-        System.out.println("Общее количество прыжков, сделанных всеми собаками: " + counterOfJumps);
+    public static int getCounterOfJumps(){
+        return Dog3.counterOfJumps;
     }
 
     public String getName() {
@@ -31,11 +31,11 @@ public class Dog3 {
     }
 
     public int getMaxJumpHeight() {
-        return maxJumpHeight;
+        return this.maxJumpHeight;
     }
 
     public int getIncreaseByTraining() {
-        return increaseByTraining;
+        return this.increaseByTraining;
     }
 
     public void setName(String string) {
@@ -43,12 +43,12 @@ public class Dog3 {
     }
 
     public void setJumpHeight(int jumpHeight) {
-        if (jumpHeight < 0) jumpHeight = 0;
+        if (jumpHeight < 0) this.jumpHeight = 0;
         this.jumpHeight = jumpHeight;
     }
 
     public void setIncreaseByTraining(int increaseByTraining) {
-        if (increaseByTraining < 0) increaseByTraining = 0;
+        if (increaseByTraining < 0) this.increaseByTraining = 0;
         this.increaseByTraining = increaseByTraining;
     }
 
@@ -62,7 +62,6 @@ public class Dog3 {
         }
         if (jumpHeight >= barrierHeight) {
             jump(barrierHeight);
-            counterOfJumps++;
             System.out.println("End get barrier. Current jump: " + jumpHeight);
             return result = true;
         } else {
@@ -91,6 +90,7 @@ public class Dog3 {
     }
 
     private void jump(int height) {
+        Dog3.counterOfJumps++;
         System.out.println("I am jumping over barrier " + height + " sm!");
     }
 
