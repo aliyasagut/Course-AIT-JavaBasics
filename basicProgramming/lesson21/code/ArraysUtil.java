@@ -10,7 +10,7 @@ public class ArraysUtil {
         return -1;
     }
 
-    // Метод возвращает индекс мин значения от всего массиве
+    // Метод выводит массив в консоль
     public static void printArray(int[] array) {
         System.out.print("[");
         for (int i = 0; i < array.length; i++) {
@@ -22,6 +22,7 @@ public class ArraysUtil {
         System.out.println("]");
     }
 
+    // Метод возвращает индекс мин значения от всего массиве
     private static int minIndex(int[] arr) {
         int min = arr[0];
         int minIndex = 0;
@@ -61,6 +62,7 @@ public class ArraysUtil {
 //        return minIndex;
 //    }
 
+    // Сортировка по возрастанию
     public static void sortSelection(int[] array) {
 
         for (int i = 0; i < array.length - 1; i++) {
