@@ -13,11 +13,13 @@ public class Lesson21 {
 
         System.out.println("До сортировки");
         ArraysUtil.printArray(ints);
+        System.out.println(ArraysUtil.toString(ints) + "\n");
 
         ArraysUtil.sortSelection(ints);
 
         System.out.println("После сортировки");
         ArraysUtil.printArray(ints);
+        System.out.println(ArraysUtil.toString(ints) + "\n");
 
         int numberForSearch = 6;
         int idx = ArraysUtil.binarySearch(ints, numberForSearch);

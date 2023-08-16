@@ -16,13 +16,22 @@ public class ArraysUtil {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i]);
             if (i < array.length - 1) {
-                System.out.print("; ");
+                System.out.print(", ");
             }
         }
-        System.out.println("]");
+        System.out.println("]\n");
     }
 
-    // Метод возвращает индекс мин значения от всего массиве
+    // Распечатка, формирует результирующую строку
+    public static String toString(int[] array) {
+        String result = "[";
+        for (int i = 0; i < array.length; i++) {
+            result += array[i] + (i < array.length - 1 ? ", " : "]");
+        }
+        return result;
+    }
+
+    // Метод возвращает индекс мин значение от всего массиве
     private static int minIndex(int[] arr) {
         int min = arr[0];
         int minIndex = 0;
@@ -33,6 +42,19 @@ public class ArraysUtil {
             }
         }
         return minIndex;
+    }
+
+    // Метод возвращает индекс макс значение от всего массиве
+    private static int maxIndex(int[] arr) {
+        int max = arr[0];
+        int manIndex = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+                manIndex = i;
+            }
+        }
+        return manIndex;
     }
 
     // Метод возвращает индекс мин значения
