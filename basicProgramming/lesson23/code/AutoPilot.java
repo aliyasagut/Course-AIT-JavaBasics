@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class AutoPilot {
     private final int id;
     private String model;
@@ -14,7 +12,7 @@ public class AutoPilot {
         this.id = counter++;
     }
 
-    public void dribeBus() {
+    public void driveBus() {
         turnOn();
         System.out.println("{ Autopilot: id " + id + "; Model: " + model +
                 " управляет автобусом " + bus.getId() + " " + bus.getModel()+ "  }");

@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main23 {
 
     public static void main(String[] args) {
@@ -27,6 +29,13 @@ public class Main23 {
         System.out.println("\n-------------------\n");
         bus.moveByAutopilot();
         bus.moveByDriver();
+
+        System.out.println("++++++++++++++++++++++++");
+        driver1.addCategory("D");
+        System.out.println(Arrays.toString(driver1.getCategories()));
+
+        driver1.removeCategories("B");
+        System.out.println(Arrays.toString(driver1.getCategories()));
 
 
 

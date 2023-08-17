@@ -34,7 +34,7 @@ public class RubberArray3 {
 
     public void add(int value) { // добавление элемента в массив
         if (isArrayFull()) {
-            extractArray();
+            extendArray();
         }
         array[cursor] = value;
         cursor++;
@@ -51,7 +51,7 @@ public class RubberArray3 {
         return cursor == array.length - 1;
     }
 
-    private void extractArray() { // расширение массива на 1 ячейку
+    private void extendArray() { // расширение массива на 1 ячейку
         System.out.println("Расширяем внутренний массив!");
         array = Arrays.copyOf(array, array.length * RubberArray3.MULTIPLIER);
     }

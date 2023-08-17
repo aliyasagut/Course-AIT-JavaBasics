@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class BusDriver {
     private int id;
     private String name;
-    private String[] categories;
+    private RubberArrayString categories;
     private int age;
 
     static private int counter;
@@ -11,14 +11,15 @@ public class BusDriver {
     public BusDriver(String name, int age) {
         this.name = name;
         this.age = age;
-        this.categories = new String[1];
-        categories[0] = "B";
-        this.id = counter++;
+        this.categories = new RubberArrayString();
+        this.categories.add("B");
+//        categories[0] = "B";
+        this.id = BusDriver.counter++;
     }
 
     public String toString() {
         return "{ Driver: id " + id + "; Name: " + name +
-                "; category: " + Arrays.toString(categories) + " }";
+                "; category: " + Arrays.toString(categories.toArray()) + " }";
     }
 
     public void driveBus(Bus1 bus) {
@@ -28,12 +29,14 @@ public class BusDriver {
                 " " + bus.getModel());
     }
 
-    public void adCategories(String categories) {
-        //TODO
+    public void addCategory(String category) {
+        if (categories.searchByValue(category) == -1) {
+            categories.add(category);
+        }
     }
 
     public void removeCategories(String category) {
-        //TODO
+        categories.deleteAllByValue(category);
     }
 
     public int getId() {
@@ -49,7 +52,7 @@ public class BusDriver {
     }
 
     public String[] getCategories() {
-        return categories;
+        return categories.toArray();
     }
 
     public int getAge() {

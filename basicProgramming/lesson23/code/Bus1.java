@@ -44,7 +44,7 @@ public class Bus1 {
     }
 
     public void moveByAutopilot(){
-        autoPilot.dribeBus();
+        autoPilot.driveBus();
     }
 
     public String getAutoPilotInfo() {
